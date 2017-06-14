@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from masterdata import views as v
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$',v.home,name='home'),
+    url(r'^add/$',v.add,name='home'),
+    url(r'^delete/(?P<pk>\d+)/$',v.delete,name='home')
 ]

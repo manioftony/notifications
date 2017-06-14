@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+<h2>Basic table</h2>
+    <a href="/add">Add</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in obj %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+
+                <td>
+                <a href="/delete/{{i.id}}">
+                {% if i.active == 0 %}
+                    Active
+                {% elif i.active == 2 %}
+                    De Active
+                {% endif %}
+                </a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}
