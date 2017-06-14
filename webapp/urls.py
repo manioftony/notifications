@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',v.home,name='home'),
     url(r'^add/$',v.add,name='home'),
-    url(r'^delete/(?P<pk>\d+)/$',v.delete,name='home')
+    url(r'^delete/(?P<pk>\d+)/$',v.delete,name='home'),
+    url(r'^notifications/$',v.pushnotifications,name='home'),
 ]

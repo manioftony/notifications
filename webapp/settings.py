@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'masterdata'
+    'masterdata',
+    'push_notifications'
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
+
+PUSH_NOTIFICATIONS_SETTINGS = {
+        "FCM_API_KEY": "AAAAdOloTgI:APA91bGfYAq3RCFzSykmNA7W3N9-DWRl5Kmi5k3Qv2NQ_2lzQ1COXVFanwAGO71QPY_UpCsGuejbOPxh6l5TPlDBd2H-c2sjBKfDJTnJ1BxoxyYGcORkPzNA7XxK0Kds-vv7UP9pBoND",
+        # "GCM_API_KEY": "[your api key]",
+        # "APNS_CERTIFICATE": "/path/to/your/certificate.pem",
+        # "APNS_TOPIC": "com.example.push_test",
+        # "WNS_PACKAGE_SECURITY_ID": "[your package security id, e.g: 'ms-app://e-3-4-6234...']",
+        # "WNS_SECRET_KEY": "[your app secret key, e.g.: 'KDiejnLKDUWodsjmewuSZkk']",
+}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+
+
+<h1>Welcome Notifications</h1>
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBk_MRqE0bI4W0gWiynsuEEWHbOD0eI88g",
+    authDomain: "sample-68034.firebaseapp.com",
+    databaseURL: "https://sample-68034.firebaseio.com",
+    projectId: "sample-68034",
+    storageBucket: "sample-68034.appspot.com",
+    messagingSenderId: "502132133378"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+
+</div>
+
+{% endblock %}

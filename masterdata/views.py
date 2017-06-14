@@ -32,3 +32,5 @@ def delete(request, pk=None):
 
 
 
+def pushnotifications(request):
+    return render(request,'notifications.html',locals())
