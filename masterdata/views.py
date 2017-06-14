@@ -33,4 +33,10 @@ def delete(request, pk=None):
 
 
 def pushnotifications(request):
-    return render(request,'notifications.html',locals())
+    if request.method == 'POST':
+        from push_notifications.models import APNSDevice, GCMDevice
+        device = GCMDevice.objects.get(registration_id=gcm_reg_id)
+        device.send_message("You've got mail")
+        return HttpResponseRedirect("/")
+    else:
+        return render(request,'notifications.html',locals())

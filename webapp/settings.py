@@ -123,10 +123,17 @@ STATIC_URL = '/static/'
 
 
 
+# FCM_DJANGO_SETTINGS = {
+#         "FCM_SERVER_KEY": "AAAAudM4bNo:APA91bEOrJJcmVhgUloBuQUpFSGvWy0t41CLAlOncaBu-YtluwlLQNu5IA4zFeFLryux3L3VMWQc13C3ABd4U3x7uMUp6EC0xpyN_n-YtVw1t6V_G9-tJJafRJwqqCApKt0M4X_IgUbv"
+# }
+
+
 
 PUSH_NOTIFICATIONS_SETTINGS = {
-        "FCM_API_KEY": "AAAAdOloTgI:APA91bGfYAq3RCFzSykmNA7W3N9-DWRl5Kmi5k3Qv2NQ_2lzQ1COXVFanwAGO71QPY_UpCsGuejbOPxh6l5TPlDBd2H-c2sjBKfDJTnJ1BxoxyYGcORkPzNA7XxK0Kds-vv7UP9pBoND",
-        # "GCM_API_KEY": "[your api key]",
+        "GCM_API_KEY": "AAAAdOloTgI:APA91bEHwInbGJ-xmrzvb-6r8NuCN8ui0BVztcVq7UXAEQnF6omv3L58wB9WlIMGAUw70_2hMzrtneIFJLTxNdBHM-WNQYK3UuCpvwvE-qwQbvOdaSpfUakhfTRXr_WH5xk9DRBFjMvY"
+        # "GCM_POST_URL":"https://fcm.googleapis.com/fcm/send",
+
+        # "GCM_API_KEY": "AAAAdOloTgI:APA91bGfYAq3RCFzSykmNA7W3N9-DWRl5Kmi5k3Qv2NQ_2lzQ1COXVFanwAGO71QPY_UpCsGuejbOPxh6l5TPlDBd2H-c2sjBKfDJTnJ1BxoxyYGcORkPzNA7XxK0Kds-vv7UP9pBoND",
         # "APNS_CERTIFICATE": "/path/to/your/certificate.pem",
         # "APNS_TOPIC": "com.example.push_test",
         # "WNS_PACKAGE_SECURITY_ID": "[your package security id, e.g: 'ms-app://e-3-4-6234...']",
